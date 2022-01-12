@@ -1,0 +1,273 @@
+/*Global Style */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+/*Header Style*/
+
+header{
+    margin: 0;
+    padding: 32px 0px;
+    color: white;
+    background-color: #35424a;
+    border-bottom: #e8491e 3px solid;
+}
+#my{
+    color: #e8491d;
+}
+header h1{
+    font-size: 32px;
+    font-weight: bold;
+    float: left;
+}
+header nav{
+    float: right;
+    padding-top: 10px;
+}
+li{
+    display: inline;
+    padding-right: 25px;
+}
+li a{
+    font-size: 22px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.Hbold a{
+    color: #e8491d;
+}
+a:hover{
+    color: #e8491d;
+}
+/*ShowCase Area Style*/
+
+.middle{
+    text-align: center;
+    color: white;
+    height: 400px;
+    background-image: url(img/showcase.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+.middle h1{
+    padding: 60px 0 20px 0;
+    font-size: 60px;
+}
+.middle p{
+    padding: 10px;
+    font-size: 20px;    
+}
+/*Newsletter Area Style*/
+.news {
+    padding: 32px 0px;
+    background: #35424a;
+    color: white;
+}
+.news p{
+    font-weight: bold;
+    font-size: 25px;
+    float: left;
+    width: 68.5%;
+}
+input{
+    width: 250px;
+    border: 0;
+    padding: 8px 0px;
+}
+button{
+    border: 0;
+    padding: 8px 18px;
+    color: white;
+    background-color: #e8491d;
+}
+.boxes{
+    background: white;
+}
+.box{
+    height: 300px;
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+.box img{
+    padding: 20px 0;
+}
+.box p{
+    padding: 10px 10px;
+}
+.box h3{
+    font-size: 20px;
+    padding: 10px 0;
+}
+footer{
+    text-align: center;
+    background-color: #e8491d;
+    padding: 30px;
+    color: white;
+    font-size: 16px;
+}
+.about{
+    float: left;
+    width: 65%;
+    padding: 20px 0px;
+}
+.about h2{
+    font-size: 25px;
+    padding: 10px 0px;
+}
+.about p{
+    font-size: 18px;
+    padding: 10px 0;
+    line-height: 23px;
+
+}
+.mainc{
+    background: #f4f4f4;
+}
+#whatwedo{
+    float: right;
+    width: 30%;
+    margin-top: 15px;
+    background-color: #35424a;
+    color: white;
+    padding: 25px 10px;
+}
+#whatwedo h3{
+    font-size: 25px;
+    padding: 10px 10px;
+}
+#whatwedo p{
+    font-size: 18px;
+    padding: 10px 10px;
+    line-height: 23px;
+}
+#button{
+    width: 70px;
+    margin-top: 15px;
+}
+#whatwe{
+    float: right;
+    width: 30%;
+    background-color: #35424a;
+    color: white;
+    padding: 25px 5px;
+    margin-top: 65px;
+}
+
+#whatwe input{
+    width: 300px;
+    margin: 5px 0;
+}
+.services{
+    float: left;
+    width: 65%;
+    padding: 20px 0;
+}
+.serv-list{
+    border: 1px solid darkgrey;
+    margin-bottom: 5px;
+    padding: 20px;
+    background-color: #e6e6e6;
+}
+.services h2{
+    padding: 10px 0;
+    font-size: 21px;
+}
+.services h3{
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+.services p{
+    line-height: 24px;
+    font-size: 17px;
+    padding: 7px 0;
+}
+#whatwe h3{
+    font-size: 25px;
+    padding: 10px 0px;
+}
+/*Media Queries*/
+@media(max-width: 1200px){
+  .news p{
+      width: 50%;
+      position: relative;
+  }
+}
+@media(max-width: 825px){
+    header h1, nav{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    li{
+        padding-right: 10px;
+    }
+    .middle h1{
+        font-size: 35px;
+        padding: 60px 0 20px 0;
+    }
+    .news p{
+        float: none;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    input{
+        width: 100%;
+        margin: 10px 0;
+    }
+    button{
+        width: 100%;
+    }
+    .box{
+        width: 100%;
+        text-align: center;
+        float: none;
+        height: 300px;
+    }
+    .about{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    .about p{
+        line-height: 20px;
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+    #whatwedo{
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin-top: 15px;
+        padding: 25px 5px;
+    }
+    .services{
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+    #whatwe {
+        width: 100%;
+        margin: 5px 0;
+        float: none;
+    }
+    #whatwe input{
+        width: 100%;
+        margin: 5px 0;
+    }
+    #button{
+        width: 100%;
+    }
+}
