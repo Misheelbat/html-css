@@ -1,0 +1,155 @@
+/*  font-family: 'Source Sans Pro', sans-serif;  */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1rem;
+	color: #404040;
+	text-align: center;
+}
+/* Typograpy */
+
+h1 {
+	font-size: 2.25rem;
+	font-weight: 400;
+	margin: 0;
+}
+h1 + p {
+	color: #f18119;
+	font-weight: 900;
+	font-size: 1.3125rem;
+	text-transform: uppercase;
+	margin: 0;
+}
+h2 + p {
+	text-transform: uppercase;
+	color: #f18119;
+	margin-top: 0;
+}
+h2 {
+	font-size: 1.3125rem;
+	margin: 0;
+}
+strong {
+	font-weight: 900;
+}
+.top {
+	margin: 0;
+	order: -1;
+}
+.top-text {
+	font-size: 0.625rem;
+	font-weight: 900;
+	color: #f18119;
+	text-transform: uppercase;
+	border-top: 5px solid #f18119;
+	border-image: linear-gradient(to right, #ffa51d, #ff713b) 1;
+}
+.fine-print {
+	font-size: 0.625rem;
+	letter-spacing: 1px;
+}
+/* Intro section*/
+
+.intro {
+	color: #fff;
+	background-color: #404040;
+	background-image: url(../images/ribs.jpg);
+	background-blend-mode: multiply;
+	background-size: cover;
+	background-position: center;
+	padding: 0 0.5em 2em;
+}
+
+/* Main content */
+
+.main-content {
+	padding: 2em 1em;
+}
+.container {
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.intro-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 50vh;
+}
+/* form */
+.email-collector {
+	max-width: 80%;
+	width: 300px;
+	margin: 0 auto;
+}
+input,
+.btn {
+	width: 100%;
+	border-radius: 7px;
+}
+input {
+	font-family: inherit;
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+	text-align: center;
+	border: 1px solid #404040;
+	transition: transform 250ms;
+}
+
+input:focus {
+	transform: scale(1.01);
+}
+
+.btn {
+	display: inline-block;
+	padding: 1em 0;
+	text-transform: uppercase;
+	font-size: 00.625rem;
+	letter-spacing: 1px;
+	font-weight: 900;
+	border: 0;
+	cursor: pointer;
+}
+.btn-primary {
+	background-image: linear-gradient(to right, #ffa51d, #ff713b);
+	color: white;
+	transition: color 0.5s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+	color: black;
+}
+
+/* Media query */
+@media (min-width: 500px) {
+	body {
+		font-size: 1.125rem;
+		display: flex;
+	}
+	h1 {
+		font-size: 3.5rem;
+	}
+	h2,
+	h1 + p {
+		font-size: 1.75rem;
+	}
+	.intro,
+	.main-content {
+		width: 50%;
+		min-height: 100vh;
+	}
+	.main-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.intro-content {
+		height: 100%;
+	}
+}
