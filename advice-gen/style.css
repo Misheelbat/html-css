@@ -1,0 +1,64 @@
+body {
+	margin: 0;
+	font-family: 'Manrope', sans-serif;
+}
+
+main {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	background-color: hsl(218, 23%, 16%);
+	text-align: center;
+	color: hsl(193, 38%, 86%);
+	font-weight: 800;
+}
+
+.image {
+	width: 100%;
+	display: block;
+	margin: 30px 0 40px;
+}
+
+.card {
+	box-sizing: border-box;
+	position: absolute;
+	width: 375px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: hsl(217, 19%, 24%);
+	border-radius: 10px;
+	padding: 10px 30px;
+}
+.number {
+	font-size: 8px;
+	letter-spacing: 2px;
+	color: hsl(150, 100%, 66%);
+	margin: 15px 0;
+}
+.text-content {
+	font-size: 28px;
+}
+.dice img {
+	width: 15px;
+	height: 15px;
+	display: block;
+	object-fit: cover;
+}
+.dice {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	display: flex;
+	width: 30px;
+	height: 30px;
+	background-color: hsl(150, 100%, 66%);
+	padding: 5px;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.dice:hover {
+	box-shadow: 0px 0px 20px 2px hsl(150, 100%, 66%);
+}
